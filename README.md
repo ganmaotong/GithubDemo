@@ -2,3 +2,4 @@
 一个用于自动化部署的简单例子
 DEV INIT 
 DEV INIT 
+TEST INIT 
