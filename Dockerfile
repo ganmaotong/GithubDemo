@@ -1,7 +1,7 @@
 #指定基础镜像，在其上进行定制
 #FROM openjdk:8-jre
 # 基于的镜像
-FROM 49.235.21.109/library/openjdk:8-jdk-alpine
+FROM openjdk:8-jdk-alpine
 
 #维护者信息
 MAINTAINER yetong <68762746@qq.com>
