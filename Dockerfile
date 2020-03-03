@@ -10,7 +10,7 @@ MAINTAINER yetong <68762746@qq.com>
 VOLUME /tmp
 
 RUN  mkdir -p /usr/share/myservice
-RUN bash -c 'touch /usr/share/myservice/myservice.jar'
+#RUN bash -c 'touch /usr/share/myservice/myservice.jar'
 
 #指定容器启动程序及参数   <ENTRYPOINT> "<CMD>"
 ENTRYPOINT ["/usr/bin/java", "-jar", "/usr/share/myservice/myservice.jar"]
