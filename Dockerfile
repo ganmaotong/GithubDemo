@@ -16,6 +16,7 @@ RUN  mkdir -p /usr/share/myservice
 ENTRYPOINT ["/usr/bin/java", "-jar", "/usr/share/myservice/myservice.jar"]
 
 #ADD target/lib    /usr/share/myservice/lib
+EXPOSE 9999
 
 #定义了变量，该变量跟dockerfile-maven-plugin中定义的<JAR_FILE>匹配
 ARG JAR_FILE
