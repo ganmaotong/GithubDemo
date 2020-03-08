@@ -17,6 +17,7 @@ ENTRYPOINT ["/usr/bin/java", "-jar", "/usr/share/myservice/myservice.jar"]
 
 #ADD target/lib    /usr/share/myservice/lib
 
+#定义了变量，该变量跟dockerfile-maven-plugin中定义的<JAR_FILE>匹配
 ARG JAR_FILE
-#ADD target/${JAR_FILE} /usr/share/myservice/myservice.jar
-ADD target/github-demo-2.2-SNAPSHOT.jar /usr/share/myservice/myservice.jar
+ADD target/${JAR_FILE} /usr/share/myservice/myservice.jar
+#ADD target/github-demo-2.2-SNAPSHOT.jar /usr/share/myservice/myservice.jar
