@@ -14,7 +14,8 @@ VOLUME /tmp
 #指定容器启动程序及参数   <ENTRYPOINT> "<CMD>"
 ENTRYPOINT ["/usr/bin/java", "-jar", "/usr/share/myservice/myservice.jar"]
 
-#ADD target/lib    /usr/share/myservice/lib
+#把mmaven打包的依赖jar包拷贝
+ADD target/lib    /usr/share/myservice/lib
 EXPOSE 8082
 
 #定义了变量，该变量跟dockerfile-maven-plugin中定义的<JAR_FILE>匹配

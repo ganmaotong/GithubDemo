@@ -27,7 +27,7 @@ public class UserController {
     public String list() {
         List<User> list = userService.listUser();
         System.out.println(list.get(0).getUserName());
-        return "2.1-SNAPSHOT版本，返回用户列表";
+        return "2.4-SNAPSHOT版本，返回用户列表";
     }
 
     @RequestMapping("One")
